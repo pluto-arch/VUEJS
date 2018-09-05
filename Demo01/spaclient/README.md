@@ -25,3 +25,12 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+# Demo01说明：
+``` bash
+# 1、在 index.html 中找到：
+<div id="app"></div>
+这里就是初始模板里VUE渲染内容的地方
+然后找到
+``` 
