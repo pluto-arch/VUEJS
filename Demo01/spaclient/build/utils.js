@@ -52,7 +52,7 @@ exports.cssLoaders = function (options) {
     postcss: generateLoaders(),
     less: generateLoaders('less'),
     sass: generateLoaders('sass', { indentedSyntax: true }),
-    scss: generateLoaders('sass'),
+    scss: generateLoaders('sass', {includePaths: ['node_modules']}),//保证webpack可以解析sass
     stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')
   }

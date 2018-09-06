@@ -24,7 +24,8 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      '@': resolve('src'),
+      'vue-mdc-adapter': 'vue-mdc-adapter/dist'//解析vue-mdc-adapter sources源
     }
   },
   module: {
@@ -46,7 +47,9 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test')]
+        include: [resolve('src'), resolve('test'),
+        resolve('node_modules/@material'),
+        resolve('node_modules/vue-mdc-adapter')]//找到其加载程序是babel-loader的条目并更改include属性
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,

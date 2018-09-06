@@ -12,9 +12,14 @@
     <label for="price">Product Price</label>
     <input id="price" v-model.number="product.price" type="text" placeholder="price"/>
   </div>
+  <a href="#" @click.prevent="updateProduct">
+    UPDATE PRODUCT
+  </a>
+
 </form>
 </template>
 <script>
+
 import datalayer from '../datalayer'
 export default {
   name: 'update-view',
@@ -35,6 +40,12 @@ export default {
   },
   created () {
     this.product = datalayer.getProductById(+this.$route.params.id)
+  },
+  methods:{
+    updateProduct () {
+      datalayer.updateProduct(+this.$route.params.id, this.product)//调用datalayer中定义的对象的方法
+      this.$router.push({name: 'HomeView'})
+    }
   }
 }
 </script>

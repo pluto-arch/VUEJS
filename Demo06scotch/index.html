@@ -1,0 +1,60 @@
+<html>
+
+<head></head>
+
+<body>
+
+
+    <!-- Template -->
+    <div id="app">
+        <div>
+            <input type="text" v-model="name" placeholder="Your name?" />
+            <h3>Hello, {{name}}</h3>
+
+
+        </div>
+        <a @click='hahaha'>点击我</a>
+
+        <hr/>
+        <div id="app2">
+            <product class="{selected: isSelected}" />
+        </div>
+
+
+    </div>
+    <!-- CDN方式添加vue js -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script>
+        /*创建一个vue实例
+        Vue实例必须使用描述Vue应用程序的对象。
+        template:模板是我们允许DOM Vue执行魔术操作的地方。
+        */
+
+        new Vue({
+            el: '#app', //这个必须要有，指定组件的容器。可以用new Vue({}).$mount('#app')方式绑定，就不用写el属性了
+
+
+            methods: {
+                hahaha: function () {
+                    alert(1111);
+                }
+            }
+        })
+        /*
+        为了模块化，您可以将组件的HTML，CSS和JavaScript代码放在一个带有.vue文件扩展名的文件中
+        */
+        Vue.component('product', {
+            template: '<div class="card">asssssssssssssssss</div>'
+        });
+        new Vue({
+            el: "#app2",
+            data() {
+                reurn: {
+                    isSelected = true;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

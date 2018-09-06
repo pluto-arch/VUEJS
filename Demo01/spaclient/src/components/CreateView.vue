@@ -12,6 +12,9 @@
     <label for="price">Product Price</label>
     <input id="price" v-model.number="product.price" type="text" placeholder="price"/>
   </div>
+  <button @click.prevent="createProduct">
+    Create new
+  </button>
 </form>
 </template>
 
@@ -27,6 +30,12 @@ export default {
         description: '',
         price: 0
       }
+    }
+  },
+  methods:{
+    createProduct(){
+      datalayer.insertProduct(this.product)
+      this.$router.push({name: 'HomeView'})//跳转
     }
   }
 }
