@@ -1,0 +1,11 @@
+P:\DotnetCore\VUEJS\Demo03\bin\Debug\netcoreapp2.0\Demo03.deps.json
+P:\DotnetCore\VUEJS\Demo03\bin\Debug\netcoreapp2.0\Demo03.runtimeconfig.json
+P:\DotnetCore\VUEJS\Demo03\bin\Debug\netcoreapp2.0\Demo03.runtimeconfig.dev.json
+P:\DotnetCore\VUEJS\Demo03\bin\Debug\netcoreapp2.0\Demo03.dll
+P:\DotnetCore\VUEJS\Demo03\bin\Debug\netcoreapp2.0\Demo03.pdb
+P:\DotnetCore\VUEJS\Demo03\obj\Debug\netcoreapp2.0\Demo03.csprojAssemblyReference.cache
+P:\DotnetCore\VUEJS\Demo03\obj\Debug\netcoreapp2.0\Demo03.csproj.CoreCompileInputs.cache
+P:\DotnetCore\VUEJS\Demo03\obj\Debug\netcoreapp2.0\Demo03.AssemblyInfoInputs.cache
+P:\DotnetCore\VUEJS\Demo03\obj\Debug\netcoreapp2.0\Demo03.AssemblyInfo.cs
+P:\DotnetCore\VUEJS\Demo03\obj\Debug\netcoreapp2.0\Demo03.dll
+P:\DotnetCore\VUEJS\Demo03\obj\Debug\netcoreapp2.0\Demo03.pdb
