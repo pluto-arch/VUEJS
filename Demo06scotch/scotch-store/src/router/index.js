@@ -11,6 +11,7 @@ import New from '@/pages/admin/New'
 import Products from '@/pages/admin/Products'
 import Edit from '@/pages/admin/Edit'
 
+
 Vue.use(Router)
 
 export default new Router({
@@ -38,7 +39,11 @@ export default new Router({
         {
           path: 'products',
           name: 'Products',
-          component: Products
+          component: Products,
+          meta: {
+            isUseCache: false, // 这个字段的意思稍后再说
+            keepAlive: true // 通过此字段判断是否需要缓存当前组件
+          }
         },
         {
           path: 'edit/:id',
